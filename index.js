@@ -40,32 +40,33 @@ class Airplane {
         + It should return a string with `name` and `age`. Example: "Mary, 50"
 */
 
-
 class Person {
-  constructor (name, age){
+  constructor(name, age) {
     this.name = name;
     this.age = age;
     this.stomach = [];
   }
-  eat(someFood){
-    if(this.stomach.length < 10){
+  eat(someFood) {
+    if (this.stomach.length < 10) {
       this.stomach.push(someFood);
-      }else{
-        return this.stomach;
-      }
+    } else {
+      return this.stomach;
     }
+  }
 
-  toString(){
-      return `${this.name} ${this.age}`
-    }
-  poop(){
-    if(this.stomach.length = 0){
-     function empty(stomach){
-      this.stomach = [];
-     }
+  toString() {
+    return `${this.name} ${this.age}`
+  }
+  poop() {
+    if (this.stomach.length = 0) {
+      function empty(stomach) {
+        this.stomach = [];
+      }
     }
   }
 }
+
+
 
 /*
   TASK 2
@@ -169,11 +170,25 @@ class ProjectManager {
 ///////// END OF CHALLENGE /////////
 if (typeof exports !== 'undefined') {
   module.exports = module.exports || {}
-  if (Airplane) { module.exports.Airplane = Airplane }
-  if (Person) { module.exports.Person = Person }
-  if (Car) { module.exports.Car = Car }
-  if (Lambdasian) { module.exports.Lambdasian = Lambdasian }
-  if (Instructor) { module.exports.Instructor = Instructor }
-  if (Student) { module.exports.Student = Student }
-  if (ProjectManager) { module.exports.ProjectManager = ProjectManager }
+  if (Airplane) {
+    module.exports.Airplane = Airplane
+  }
+  if (Person) {
+    module.exports.Person = Person
+  }
+  if (Car) {
+    module.exports.Car = Car
+  }
+  if (Lambdasian) {
+    module.exports.Lambdasian = Lambdasian
+  }
+  if (Instructor) {
+    module.exports.Instructor = Instructor
+  }
+  if (Student) {
+    module.exports.Student = Student
+  }
+  if (ProjectManager) {
+    module.exports.ProjectManager = ProjectManager
+  }
 }
